@@ -9,5 +9,5 @@ const inventories = inventory.map((minQuantity) => {
   return minQuantity.quantity;
 });
 
-let inventoryQuantitymin = Math.min(inventories);
+let inventoryQuantitymin = Math.min(...inventories);
 console.log(inventoryQuantitymin);
